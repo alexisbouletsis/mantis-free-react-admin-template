@@ -18,7 +18,6 @@ const AddProducts = () => {
   const [expDate, setExpDate] = useState('');
   const [totalCost, setTotalCost] = useState('');
   // let navigate = useNavigate();
-
   const addProduct = (e) => {
     e.preventDefault();
     
@@ -144,7 +143,7 @@ const AddProducts = () => {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <FormControl sx={{ width: { xs: '100%', md: 250 } }}>
-            <input type="date" name='orderDate' id="date" value={orderDate} onChange={(e) => setOrderDate(e.target.value)} required></input>
+            <input type="datetime-local" name='orderDate' id="date" value={orderDate} onChange={(e) => setOrderDate(e.target.value)} required></input>
           </FormControl>
         </div>
       </form>
