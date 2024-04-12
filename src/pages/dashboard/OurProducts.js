@@ -257,7 +257,7 @@ const OurProducts = () => {
                       handleHeaderClick(headCell)
                     }}
                   >
-                    {headCell.id === sort.keyToSort && headCell.id !== 'productAction' &&(
+                    {headCell.id === sort.keyToSort && headCell.id !== 'productAction' && (
                       <span>
                         {sort.direction === 'asc' ? <CaretUpOutlined /> : <CaretDownOutlined />}
                       </span>
